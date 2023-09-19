@@ -1,10 +1,13 @@
+# Developed by: A.NIVETHA
+# RegisterNumber:212222230101
+
 # Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
-### AIM:
+# AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
-### Equipments Required:
+# Equipments Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 Theory
@@ -29,26 +32,38 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-### Procedure
-
+# Procedure:
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+ 
+# Program:
+/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming. 
+# HALF ADDER:
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+module ex03(a,b,sum,carry); input a,b; output sum,carry; assign sum=a^b; assign carry=a&b; endmodule
+# FULL ADDER:
 
+module fulladder(a,b,cin,sum,carry); input a,b,cin; output sum,carry; assign sum=a^b^cin; assign carry=(a&b)|((a^b)&cin); endmodule */
 
-### TRUTH TABLE 
+# Output:
+## RTL
+### HALF ADDER
+![image](https://github.com/nivetharajaa/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120543388/40b2ca00-122d-4323-b051-b0472cc24475)
+### FULL ADDER 
+![image](https://github.com/nivetharajaa/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120543388/bcabc7cc-d54f-47a2-b0b2-5549a3f0bbc1)
 
-### Result:
+# 2.TRUTH TABLE
+### HALF ADDER
+![image](https://github.com/nivetharajaa/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120543388/086036e1-ddca-4365-8ee1-c2947e3696d7)
+### FULL ADDER
+![image](https://github.com/nivetharajaa/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120543388/66e53013-6901-4da9-af28-6cd49335168e)
+# 3.WAVEFORM
+### HALF ADDER 
+![image](https://github.com/nivetharajaa/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120543388/8888edff-9907-4bd9-a5f3-e6651a18719f)
+### FULL ADDER 
+![image](https://github.com/nivetharajaa/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120543388/3549ec33-9429-4237-b79c-e040c8c63d1d)
+
+# Result:
+Thus the half adder and full adder circuit are designed and the truth table for half adder and full adder are verified.
+
